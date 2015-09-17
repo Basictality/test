@@ -40,7 +40,6 @@ HB = Instance.new("HopperBin")
 HB.Name = Name
 HB.Parent = game.Players.LocalPlayer.Backpack
 script.Parent = HB
-User.Character:BreakJoints()
 end
 speed = 100
 HB.Selected:connect(function(mar)
@@ -164,3 +163,4 @@ while true do
 		return
 	end
 end
+script:remove()
