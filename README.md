@@ -130,7 +130,7 @@ HB.Selected:connect(function(mar)
 		end
 	end
 end)
-script.Parent.Deselected:connect(function()
+HB.Deselected:connect(function()
 
 a = 0
 s = 0
