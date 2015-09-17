@@ -1,5 +1,3 @@
-ho = Instance.new("HopperBin",game.Players.LocalPlayer.Backpack)
-ho.BinType = "Script"
 Name = "Fly"
 pi = 3.141592653589793238462643383279502884197163993751
 a = 0
@@ -45,10 +43,10 @@ script.Parent = HB
 User.Character:BreakJoints()
 end
 speed = 100
-ho.Selected:connect(function(mar)
+HB.Selected:connect(function(mar)
 	
 	s = 1
-	torso = script.Parent.Parent.Parent.Character.Torso
+	torso = game.Players.LocalPlayer.Character.Torso
 	LeftShoulder = torso["Left Shoulder"]
 	RightShoulder = torso["Right Shoulder"]
 	LeftHip = torso["Left Hip"]
@@ -166,4 +164,3 @@ while true do
 		return
 	end
 end
-script:remove()
