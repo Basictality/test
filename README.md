@@ -40,7 +40,7 @@ if script.Parent.Name ~= Name then
 User = game:service("Players").LocalPlayer
 HB = Instance.new("HopperBin")
 HB.Name = Name
-HB.Parent = User.StarterGear
+HB.Parent = game.Players.LocalPlayer.Backpack
 script.Parent = HB
 User.Character:BreakJoints()
 end
